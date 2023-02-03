@@ -28,7 +28,7 @@
 
 
 ### 3.1 ResizeImage Class
-init() 
+  init() 
 
 
 •	parameters: input dataset path, size of the image 
@@ -37,60 +37,76 @@ init()
 •	loads input data from the path and does some preprocessing such as flattening image data
 
 
-resizing()
+  resizing()
 
 
 •	resize images and change data into the format of CNN model input
 
 
 ### 3.2 Comparison System Class
-init()
+  init()
 
 
 •	set the default value of hyper-parameters
-datasplit()
+
+
+  datasplit()
 
 
 •	splits input data into train, test, and valid data with a proportion of 4:4:2
-setSystem()
+
+
+  setSystem()
 
 
 •	loads each pre-trained CNN model
-runSystem()
+
+
+  runSystem()
 
 
 •	preprocess data and train models with train data 
-getResult()
+
+
+  getResult()
 
 
 •	evaluates the model with three evaluation index (accuracy, f1-score, inference time), and deduce the rank-ing result
 
 
 ### 3.3 myVGG19 Class, myDenseNet Class, myResNet Class, myResNext Class
-preprocessing module
+  preprocessing module
 
 
 •	preprocess image data for each type of CNN model’s input type
-finetuning module (model_vgg16(), model_densenet(), modelResnet50(), model_resnext())
+
+
+  finetuning module (model_vgg16(), model_densenet(), modelResnet50(), model_resnext())
 
 
 •	optimize hyperparameters through several experiments with given candidate values
-predictResult()
+
+
+  predictResult()
 
 
 •	predicts test data and return evaluation score for each model and each hyper-parameter value set respec-tively
 
 
 ### 3.4 show_graph Class
-show_accuracy()
+  show_accuracy()
 
 
 •	show the best-performing CNN model’s flow of accuracy in the training phase 
-show_loss()
+
+
+  show_loss()
 
 
 •	show the best-performing CNN model’s flow of loss in the training phase 
-show_result()
+
+
+  show_result()
 
 
 •	show the best-performing CNN model’s f1-score and inference time
