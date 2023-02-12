@@ -1,5 +1,5 @@
 # 표적 식별 딥러닝 모델 성능 비교 시스템 개발
-# Deep Learning Model Performance Evaluation System for Tar-get Detection
+# Deep Learning Model Performance Evaluation System for Target Detection
 
 ### Fine애플 팀 : 김민서, 김아영, 김현규, 석은규, 이예진 
 
